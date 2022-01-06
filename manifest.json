@@ -1,11 +1,25 @@
 {
-    "manifest_version":1,
-    "name":"Detox",
-    "version":"0.0.1",
-    "content_scripts":[
-        {
-            "matches":[],
-            "js":[""]
+    "manifest_version": 3,
+    "name": "Background Color Changer",
+    "version": "0.0.1",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/images.png",
+            "32": "/images/images.png",
+            "48": "/images/images.png",
+            "128": "/images/images.png"
         }
+    },
+    "icons": {
+        "16": "/images/images.png",
+        "32": "/images/images.png",
+        "48": "/images/images.png",
+        "128": "/images/images.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
     ]
 }
